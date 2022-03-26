@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewOne"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOne" />
+
+    <Button
+        android:id="@+id/btnTemparature"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAllCaps="false"
+        app:rippleColor="#D8CDCD" />
+
+    <Button
+        android:id="@+id/btnCurrency"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/currency"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnWeight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/weight"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnTemparature"
+        app:layout_constraintStart_toStartOf="@+id/btnTemparature"
+        app:layout_constraintTop_toBottomOf="@+id/btnTemparature" />
+
+    <Button
+        android:id="@+id/btnLength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/length"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnCurrency"
+        app:layout_constraintStart_toStartOf="@+id/btnCurrency"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrency" />
+
+    <EditText
+        android:id="@+id/inputDataEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/enter_value"
+        android:textAllCaps="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/btnLength"
+        app:layout_constraintStart_toStartOf="@+id/btnWeight"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeight" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/convert"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/inputDataEditText"
+        app:layout_constraintStart_toStartOf="@+id/inputDataEditText"
+        app:layout_constraintTop_toBottomOf="@+id/inputDataEditText" />
+
+    <TextView
+        android:id="@+id/textViewOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/metricTitle" />
+
+    <TextView
+        android:id="@+id/textViewThree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTwo"
+        app:layout_constraintStart_toStartOf="@+id/textViewTwo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTwo" />
+
+    <TextView
+        android:id="@+id/textViewFour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewThree"
+        app:layout_constraintStart_toStartOf="@+id/textViewThree"
+        app:layout_constraintTop_toBottomOf="@+id/textViewThree" />
+
+    <TextView
+        android:id="@+id/metricTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
+</androidx.constraintlayout.widget.ConstraintLayout>

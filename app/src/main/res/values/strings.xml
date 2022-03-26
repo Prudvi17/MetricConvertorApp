@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Metric Convertor App</string>
+    <string name="length">Length</string>
+    <string name="currency">Currency</string>
+    <string name="temperature">Temperature</string>
+    <string name="weight">Weight</string>
+    <string name="enter_value">Enter Value</string>
+    <string name="convert">Convert</string>
+    <string name="kilometers_conversion">1.609</string>
+    <string name="meters_conversion">1609.34</string>
+    <string name="feet_conversion">5280</string>
+    <string name="inches_conversion">63360</string>
+    <string name="kilogram_conversion">0.453</string>
+    <string name="gram_conversion">453.592</string>
+    <string name="ounces_conversion">16</string>
+    <string name="euro_conversion">0.91</string>
+    <string name="inr_conversion">76.26</string>
+    <string name="australian_dollar_conversion">1.33</string>
+    <string name="canadian_dollar_conversion">1.25</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
